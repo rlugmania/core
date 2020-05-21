@@ -1,57 +1,39 @@
 {
   "name": "@ngx-translate/core",
   "description": "The internationalization (i18n) library for Angular",
-  "private": true,
-  "version": "12.6.1",
+  "author": "Olivier Combe",
+  "keywords": [
+    "angular",
+    "angular 2",
+    "i18n",
+    "translate",
+    "ngx-translate"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ngx-translate/core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngx-translate/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ngx-translate/core/issues"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=8.0.0",
+    "rxjs": ">=6.3.0",
+    "tslib": "^1.10.0"
+  },
   "scripts": {
-    "build": "ng build",
-    "commit": "git-cz",
-    "lint": "ng lint",
-    "start": "ng serve",
-    "test": "ng test"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "postinstall": "cd node_modules/@ngx-translate/core && npm install && npm run build",
-  "dependencies": {
-    "@angular/common": "9.0.0",
-    "@angular/compiler": "9.0.0",
-    "@angular/core": "9.0.0",
-    "@angular/platform-browser": "9.0.0",
-    "@angular/platform-browser-dynamic": "9.0.0",
-    "@angular/router": "9.0.0",
-    "core-js": "^3.6.4",
-    "rxjs": "^6.5.4",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.0",
-    "@angular-devkit/build-ng-packagr": "~0.900.0",
-    "@angular/cli": "9.0.0",
-    "@angular/compiler-cli": "9.0.0",
-    "@angular/language-service": "9.0.0",
-    "@types/jasmine": "^3.3.13",
-    "@types/jasminewd2": "^2.0.6",
-    "@types/node": "^12.0.10",
-    "codelyzer": "^5.1.0",
-    "commitizen": "^3.1.1",
-    "cz-conventional-changelog": "^2.1.0",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "^4.2.1",
-    "karma": "^4.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage-istanbul-reporter": "^2.0.5",
-    "karma-jasmine": "^2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "karma-mocha-reporter": "^2.2.5",
-    "ng-packagr": "9.0.0",
-    "ts-node": "^8.3.0",
-    "tsickle": "^0.35.0",
-    "tslib": "^1.10.0",
-    "tslint": "^5.20.1",
-    "typescript": "3.6.5"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "main": "bundles/ngx-translate-core.umd.js",
+  "module": "fesm5/ngx-translate-core.js",
+  "es2015": "fesm2015/ngx-translate-core.js",
+  "esm5": "esm5/ngx-translate-core.js",
+  "esm2015": "esm2015/ngx-translate-core.js",
+  "fesm5": "fesm5/ngx-translate-core.js",
+  "fesm2015": "fesm2015/ngx-translate-core.js",
+  "typings": "ngx-translate-core.d.ts",
+  "metadata": "ngx-translate-core.metadata.json",
+  "sideEffects": false
 }
