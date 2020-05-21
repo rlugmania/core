@@ -318,6 +318,12 @@ export class TranslateService {
    * Returns the parsed result of the translations
    */
   public getParsedResult(translations: any, key: any, interpolateParams?: Object): any {
+
+    // TODO: Logging for intregrate a fix in IE10 :(
+    console.log('translations recieved', translations);
+    console.log('keys recieved', key);
+    console.log('interpolateparams', interpolateParams);
+
     let res: string | Observable<string>;
 
     if (key instanceof Array) {
